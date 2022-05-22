@@ -38,12 +38,7 @@ Example usage
     session = tidalapi.Session()
     # Will run until you visit the printed url and link your account
     session.login_oauth_simple()
-<<<<<<< Updated upstream
-    album = session.album(16909093)
-    tracks = album.tracks()
-=======
     tracks = session.get_album_tracks(356350)
->>>>>>> Stashed changes
     for track in tracks:
         print(track.name)
 
